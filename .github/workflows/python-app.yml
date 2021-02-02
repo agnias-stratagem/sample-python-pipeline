@@ -38,7 +38,7 @@ jobs:
     - name: Upload Coverage XML
       uses: actions/upload-artifact@v2
       with:
-        name: coverage-xml-${{ matrix.python-version }}
+        name: coverage-xml-${{ matrix.python }}
         path: coverage_reports/coverage.xml
       if: ${{ always() }}
 
