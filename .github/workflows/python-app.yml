@@ -35,4 +35,10 @@ jobs:
     - name: Test with tox
       run: |
         tox -e py
+    - name: Upload Coverage XML
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-xml-${{ matrix.python-version }}
+        path: coverage_reports/coverage.xml
+      if: ${{ always() }}
 
