@@ -4,6 +4,7 @@ import pytest
 
 from num_return.num_return import num_return
 
+
 def test_num_return():
     one = num_return(1)
     assert one == 1
@@ -11,4 +12,3 @@ def test_num_return():
 
 if __name__ == "__main__":
     pytest.main()
-

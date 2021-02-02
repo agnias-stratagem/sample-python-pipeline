@@ -34,7 +34,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with tox
       run: |
-        tox -e py
+        tox -e py report
     - name: Upload Coverage XML
       uses: actions/upload-artifact@v2
       with:
