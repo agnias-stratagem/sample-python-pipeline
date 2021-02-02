@@ -1,0 +1,21 @@
+[run]
+source = .
+omit   = docs/**
+         test/**
+         package_*.py
+         setup.py
+         venv/**
+         .tox/**
+branch = True
+
+[report]
+exclude_lines = 
+               if __name__ == .__main__.:
+               if 0:
+
+[html]
+directory = docs/coverage_html
+
+[xml]
+output = coverage_reports/coverage.xml
+
